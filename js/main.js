@@ -3,6 +3,7 @@ import api from "./api.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     ui.renderizarPensamentos();
+    ui.limparFormulario();
 
     const formularioPensamento = document.getElementById("pensamento-form");
     formularioPensamento.addEventListener("submit", manipularSubmissaoFormulario);
@@ -15,9 +16,17 @@ async function manipularSubmissaoFormulario(event) {
     const autoria = document.getElementById("pensamento-autoria").value;
 
     try {
-        await api.postPensamento({conteudo, autoria});
+        if(id){
+            await api.editarPensamento({id, conteudo, autoria});
+        } else {
+            await api.postPensamento({conteudo, autoria});
+        }
         ui.renderizarPensamentos();
     } catch {
         alert("Erro ao salvar pensamento.");
+    }
+
+    function manipularCancelamento(){
+        ui.limparFormulario();
     }
 };
