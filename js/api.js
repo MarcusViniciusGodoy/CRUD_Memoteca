@@ -1,8 +1,10 @@
+const URL_BASE = "http://localhost:3000";
+
 const api = {
     //Padrão utiliza GET
     async buscarPensamentos(){
         try {
-            const response = await fetch('http://localhost:3000/pensamentos');
+            const response = await fetch(`${URL_BASE}/pensamentos`);
             return await response.json();
         } catch {
             alert('Erro ao buscar pensamentos.');
@@ -12,7 +14,7 @@ const api = {
 
     async postPensamento(pensamento){
         try {
-            const response = await fetch('http://localhost:3000/pensamentos', {
+            const response = await fetch(`${URL_BASE}/pensamentos`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -28,7 +30,7 @@ const api = {
 
     async buscarPensamentoPorId(id){
         try {
-            const response = await fetch(`http://localhost:3000/pensamentos/${id}`);
+            const response = await fetch(`${URL_BASE}/pensamentos/${id}`);
             return await response.json();
         } catch {
             alert('Erro ao buscar pensamento.');
@@ -38,7 +40,7 @@ const api = {
 
     async editarPensamento(pensamento){
         try {
-            const response = await fetch(`http://localhost:3000/pensamentos/${pensamento.id}`, {
+            const response = await fetch(`${URL_BASE}/pensamentos/${pensamento.id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"
@@ -54,7 +56,7 @@ const api = {
 
     async excluirPensamento(id){
         try {
-            const response = await fetch(`http://localhost:3000/pensamentos/${id}`, {
+            const response = await fetch(`${URL_BASE}/pensamentos/${id}`, {
                 method: "DELETE",
             });
         } catch {

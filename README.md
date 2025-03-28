@@ -12,6 +12,12 @@ Memoteca é um aplicativo organizador de pensamentos e frases que permite cadast
 
 `Exclusão de pensamentos`: Permite remover pensamentos da lista.
 
+## Página principal mural vazio
+![Memoteca](https://github.com/MarcusViniciusGodoy/assets/blob/main/memoteca.PNG)
+
+## Página principal mural com pensamentos
+![MemotecaPensamentos](https://github.com/MarcusViniciusGodoy/assets/blob/main/mural.PNG)
+
 ## ✔️ Técnicas e tecnologias utilizadas
 
 `JavaScript`: Linguagem de programação utilizada para desenvolver a lógica do aplicativo.
