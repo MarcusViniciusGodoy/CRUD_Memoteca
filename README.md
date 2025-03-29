@@ -1,4 +1,5 @@
 # Projeto Memoteca
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/MarcusViniciusGodoy/Desafio-Componentes-e-Inje-o-de-depend-ncia/blob/main/LICENSE)
 
 Memoteca é um aplicativo organizador de pensamentos e frases que permite cadastrar, listar, editar e deletar pensamentos, incluindo informações como conteúdo e autoria.
 
