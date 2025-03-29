@@ -2,16 +2,19 @@
   "pensamentos": [
     {
       "id": "0b5b",
+      "favorito": false,
       "conteudo": "Não, eu sou seu pai!",
       "autoria": "Darth Vader"
     },
     {
       "id": "2456",
+      "favorito": false,
       "conteudo": "Bip-bip-bop-bip-bop-bip",
       "autoria": "R2-D2"
     },
     {
       "id": "7461",
+      "favorito": false,
       "conteudo": "Na minha máquina funciona!",
       "autoria": "Dev"
     }
