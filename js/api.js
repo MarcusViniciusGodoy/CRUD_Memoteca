@@ -1,5 +1,11 @@
 const URL_BASE = "http://localhost:3000";
 
+const converterStringParaData = (dataString) => {
+    const [ano, mes, dia] = dataString.split("-");
+    //2025-03-29 = [2025, 3, 29]
+    return new Date(Date.UTC(ano, mes, dia));
+}
+
 const api = {
     //Padrão utiliza GET
     async buscarPensamentos(){
@@ -14,7 +20,11 @@ const api = {
 
     async postPensamento(pensamento){
         try {
-            const response = await axios.post(`${URL_BASE}/pensamentos`, pensamento);
+            const data = converterStringParaData(pensamento.data);
+            const response = await axios.post(`${URL_BASE}/pensamentos`, {
+                ...pensamento,
+                data
+            });
             return await response.data;
         } catch {
             alert('Erro ao salvar pensamento.');
