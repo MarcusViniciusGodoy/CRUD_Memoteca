@@ -9,9 +9,13 @@ Memoteca é um aplicativo organizador de pensamentos e frases que permite cadast
 
 `Listagem de pensamentos`: Exibe os pensamentos cadastrados, permitindo visualizar o texto e a autoria.
 
+`Favorita pensamentos`: Permite favoritar pensamentos da lista.
+
 `Edição de pensamentos`: Permite editar pensamentos existentes, atualizando as informações conforme necessário.
 
 `Exclusão de pensamentos`: Permite remover pensamentos da lista.
+
+`Busca por pensamentos e autoria`: Permite buscar pensamentos ou autorias da lista.
 
 ## Página principal mural vazio
 ![Memoteca](https://github.com/MarcusViniciusGodoy/assets/blob/main/memoteca.PNG)
